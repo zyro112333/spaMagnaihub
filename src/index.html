@@ -3,31 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mongolian Food Composition Database" />
-    <meta name="keywords" content="nutrition, food composition, mongolian traditional foods" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <script defer src="./js/fontawesomeall.min.js"></script>
     <title>Mongolian Food Composition Database</title>
+    <!-- FontAwesome icon холболт -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Үндсэн тохиргоо */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Navbar тохиргоо */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 15px 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-bottom: 1px solid #eaeaea;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-weight: 800;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+        }
+        .brand img {
+            height: 35px;
+        }
+        .brand-text .orange { color: #f26b21; }
+        .brand-text .green { color: #27ae60; }
+
+        /* Цэсний тохиргоо */
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            gap: 5px;
+        }
+        .nav-menu li a {
+            text-decoration: none;
+            color: #4a5568;
+            font-weight: 600;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 15px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+        .nav-menu li a.active {
+            background-color: #f1f5f9;
+            color: #334155;
+        }
+        .nav-menu li a:hover {
+            background-color: #f8fafc;
+        }
+
+        /* Icon өнгөнүүд */
+        .icon-overview { color: #f59e0b; }
+        .icon-search { color: #10b981; }
+        .icon-calc { color: #3b82f6; }
+        .icon-books { color: #0ea5e9; }
+        .icon-contact { color: #ef4444; }
+        .lang-switch {
+            color: #f26b21 !important;
+            font-weight: bold;
+        }
+
+        /* Гол контент */
+        .main-content {
+            padding: 40px 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .content-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02), 0 1px 3px rgba(0, 0, 0, 0.05);
+            min-height: 200px;
+        }
+        .content-card h1 {
+            font-size: 24px;
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+        .content-card p {
+            color: #64748b;
+            font-size: 15px;
+        }
+    </style>
 </head>
 <body>
-    <header class="section">
-        <div class="container">
-            <h1 class="title is-3">Mongolian Food Composition Database</h1>
 
-            <nav class="buttons">
-                <a class="button is-light" href="#/overview">Overview</a>
-                <a class="button is-light" href="#/search">Search</a>
-                <a class="button is-light" href="#/calculation">Calculation</a>
-                <a class="button is-light" href="#/books">Books</a>
-                <a class="button is-light" href="#/contact">Contact</a>
-            </nav>
-        </div>
+    <!-- ДЭЭД ЦЭС: Нэг л удаа бичигдэнэ -->
+    <div class="brand">
+    <!-- icon.png файлыг дуудаж байгаа хэсэг -->
+    <img src="./img/icon.svg" alt="Logo">
+    <div class="brand-text">
+        <span class="orange">MONGOLIAN</span> 
+        <span class="green">FOOD COMPOSITION DATABASE</span>
+    </div>
+</div>
+
+        <ul class="nav-menu">
+            <li><a href="#overview" class="active"><i class="fa-solid fa-circle-question icon-overview"></i> Overview</a></li>
+            <li><a href="#search"><i class="fa-solid fa-magnifying-glass icon-search"></i> Search</a></li>
+            <li><a href="#calculator"><i class="fa-solid fa-calculator icon-calc"></i> Food Calculator</a></li>
+            <li><a href="#books"><i class="fa-solid fa-book icon-books"></i> Books</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-id-card icon-contact"></i> Contact us</a></li>
+            <li><a href="#lang" class="lang-switch">MN</a></li>
+        </ul>
     </header>
 
-    <main>
-        <div id="app"></div>
+    <!-- ГОЛ АГУУЛГА: Мөн нэг л удаа бичигдэнэ -->
+    <main class="main-content">
+        <div class="content-card">
+            <h1>Overview</h1>
+            <p>Welcome to the overview page.</p>
+        </div>
     </main>
 
-    <script type="module" src="./js/app.js"></script>
+    <!-- Хэрэв та JavaScript (router.js гэх мэт) ашиглаж байгаа бол скрипт холболтоо энд хийнэ -->
+    <!-- <script src="./js/app.js" type="module"></script> -->
 </body>
 </html>
