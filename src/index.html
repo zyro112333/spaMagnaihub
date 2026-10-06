@@ -1,56 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mongolian Food Composition Database</title>
-    <!-- FontAwesome icon холболт -->
+    <!-- Icon гаргах FontAwesome холболт -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        /* Үндсэн тохиргоо */
+        /* Үндсэн стилийн тохиргоо */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
         }
+
         body {
             background-color: #f8f9fa;
             color: #333;
         }
 
-        /* Navbar тохиргоо */
+        /* Dээд хэсэг (Header Navbar) */
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
             background-color: #ffffff;
-            padding: 15px 30px;
+            padding: 12px 30px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
             border-bottom: 1px solid #eaeaea;
         }
+
         .brand {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
             font-weight: 800;
-            font-size: 16px;
-            letter-spacing: 0.5px;
+            font-size: 15px;
+            letter-spacing: 0.3px;
         }
+
         .brand img {
             height: 35px;
+            width: auto;
+            object-fit: contain;
         }
-        .brand-text .orange { color: #f26b21; }
-        .brand-text .green { color: #27ae60; }
 
-        /* Цэсний тохиргоо */
+        .brand-text .orange {
+            color: #f26b21;
+        }
+
+        .brand-text .green {
+            color: #27ae60;
+        }
+
+        /* Навигацийн цэс */
         .nav-menu {
             display: flex;
             align-items: center;
             list-style: none;
-            gap: 5px;
+            gap: 4px;
         }
+
         .nav-menu li a {
             text-decoration: none;
             color: #4a5568;
@@ -59,47 +71,54 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            padding: 8px 15px;
+            padding: 8px 14px;
             border-radius: 6px;
             transition: all 0.2s ease;
         }
+
+        /* Идэвхтэй цэс (Тойм) */
         .nav-menu li a.active {
             background-color: #f1f5f9;
             color: #334155;
         }
+
         .nav-menu li a:hover {
             background-color: #f8fafc;
         }
 
-        /* Icon өнгөнүүд */
+        /* Icon-уудын өнгө */
         .icon-overview { color: #f59e0b; }
         .icon-search { color: #10b981; }
         .icon-calc { color: #3b82f6; }
         .icon-books { color: #0ea5e9; }
         .icon-contact { color: #ef4444; }
+
         .lang-switch {
             color: #f26b21 !important;
             font-weight: bold;
         }
 
-        /* Гол контент */
+        /* Үндсэн агуулгын карт */
         .main-content {
             padding: 40px 30px;
             max-width: 1200px;
             margin: 0 auto;
         }
+
         .content-card {
             background-color: #ffffff;
             border-radius: 12px;
             padding: 30px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02), 0 1px 3px rgba(0, 0, 0, 0.05);
-            min-height: 200px;
+            min-height: 180px;
         }
+
         .content-card h1 {
             font-size: 24px;
             color: #1e293b;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
+
         .content-card p {
             color: #64748b;
             font-size: 15px;
@@ -108,35 +127,34 @@
 </head>
 <body>
 
-    <!-- ДЭЭД ЦЭС: Нэг л удаа бичигдэнэ -->
-    <div class="brand">
-    <!-- icon.png файлыг дуудаж байгаа хэсэг -->
-    <img src="./img/icon.svg" alt="Logo">
-    <div class="brand-text">
-        <span class="orange">MONGOLIAN</span> 
-        <span class="green">FOOD COMPOSITION DATABASE</span>
-    </div>
-</div>
+    <!-- Дээд хэсгийн цэс -->
+    <header class="navbar">
+        <div class="brand">
+            <!-- Зургийн файлаа зааж өгөх хэсэг -->
+            <img src="./img/icon.svg" alt="Logo">
+            <div class="brand-text">
+                <span class="orange">МОНГОЛЫН</span> 
+                <span class="green">ХҮНСНИЙ НАЙРЛАГЫН МЭДЭЭЛЛИЙН САН</span>
+            </div>
+        </div>
 
         <ul class="nav-menu">
-            <li><a href="#overview" class="active"><i class="fa-solid fa-circle-question icon-overview"></i> Overview</a></li>
-            <li><a href="#search"><i class="fa-solid fa-magnifying-glass icon-search"></i> Search</a></li>
-            <li><a href="#calculator"><i class="fa-solid fa-calculator icon-calc"></i> Food Calculator</a></li>
-            <li><a href="#books"><i class="fa-solid fa-book icon-books"></i> Books</a></li>
-            <li><a href="#contact"><i class="fa-solid fa-id-card icon-contact"></i> Contact us</a></li>
+            <li><a href="#overview" class="active"><i class="fa-solid fa-circle-question icon-overview"></i> Тойм</a></li>
+            <li><a href="#search"><i class="fa-solid fa-magnifying-glass icon-search"></i> Хайлт</a></li>
+            <li><a href="#calculator"><i class="fa-solid fa-calculator icon-calc"></i> Тооцоолуур</a></li>
+            <li><a href="#books"><i class="fa-solid fa-book icon-books"></i> Ном</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-id-card icon-contact"></i> Холбоо барих</a></li>
             <li><a href="#lang" class="lang-switch">MN</a></li>
         </ul>
     </header>
 
-    <!-- ГОЛ АГУУЛГА: Мөн нэг л удаа бичигдэнэ -->
+    <!-- Төв хэсгийн агуулга -->
     <main class="main-content">
         <div class="content-card">
-            <h1>Overview</h1>
-            <p>Welcome to the overview page.</p>
+            <h1>Тойм</h1>
+            <p>Тойм хуудсанд тавтай морил.</p>
         </div>
     </main>
 
-    <!-- Хэрэв та JavaScript (router.js гэх мэт) ашиглаж байгаа бол скрипт холболтоо энд хийнэ -->
-    <!-- <script src="./js/app.js" type="module"></script> -->
 </body>
 </html>
