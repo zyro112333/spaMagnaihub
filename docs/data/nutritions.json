@@ -1,0 +1,96 @@
+[
+  {
+    "food_code": "01_0106",
+    "food_group": "Cereals and Cereal products",
+    "food_name": "Barley flour, whole grain",
+    "scientific_name": "Hordeum vulgare",
+    "native_name": "Арвайн эслэгт гурил",
+    "province": "Uvs",
+    "proximates": {
+      "Energy (kcal)": 358,
+      "Water (g)": 9.7,
+      "Protein (g)": 12.05,
+      "Fat (g)": 0.55,
+      "Ash (g)": 1.59,
+      "Carbohydrate (g)": 76.13
+    },
+    "minerals": {
+      "Calcium (mg)": 100,
+      "Iron (mg)": 18.7,
+      "Phosphorus (mg)": 24,
+      "Potassium (mg)": 7,
+      "Sodium (mg)": 2
+    },
+    "vitamins": {
+      "Vitamin A (μg)": 1,
+      "Thiamin (mg)": 0.28,
+      "Riboflavin (mg)": 0.11,
+      "Vitamin C (mg)": 22.95,
+      "Refuse (%)": 0.0
+    },
+    "collection_information": {
+      "Collection area": "Uvs province, Uvs food JSC",
+      "Collection date": "05.10.2021",
+      "Basis of sample selection": "Culture and customs",
+      "Additional collection information": "Product name: Fiber barley  flour"
+    },
+    "edible_inedible_part": {
+      "Weight of whole part (g/1 piece)": "1000",
+      "Weight of edible part (g/1 piece)": "1000",
+      "Inedible part (discarded part)": null,
+      "Weight of inedible part (g/1 piece)": null
+    },
+    "pretreatment_conditions": {
+      "Cooking (processing) method": null,
+      "Other cooking (processing) conditions": null,
+      "Reference for condition setting": null
+    }
+  },
+  {
+    "food_code": "01_0105",
+    "food_group": "Cereals and Cereal products",
+    "food_name": "Barley flour, whole grain, pearled",
+    "scientific_name": "Hordeum vulgare",
+    "native_name": "Халтар арвайн гурил",
+    "province": "Khuvsgul",
+    "proximates": {
+      "Energy (kcal)": 368,
+      "Water (g)": 7.7,
+      "Protein (g)": 12.67,
+      "Fat (g)": 1.32,
+      "Ash (g)": 1.9,
+      "Carbohydrate (g)": 76.4
+    },
+    "minerals": {
+      "Calcium (mg)": 99,
+      "Iron (mg)": 27.32,
+      "Phosphorus (mg)": 28,
+      "Potassium (mg)": 5,
+      "Sodium (mg)": 4
+    },
+    "vitamins": {
+      "Vitamin A (μg)": 1,
+      "Thiamin (mg)": 0.421,
+      "Riboflavin (mg)": 0.128,
+      "Vitamin C (mg)": 15.57,
+      "Refuse (%)": 0.0
+    },
+    "collection_information": {
+      "Collection area": "Khuvsgul province, Altan duulga JSC",
+      "Collection date": "25.11.2021",
+      "Basis of sample selection": "Culture and customs",
+      "Additional collection information": "Product name: Pearled barley flour,  Rousted barley flour"
+    },
+    "edible_inedible_part": {
+      "Weight of whole part (g/1 piece)": "1000",
+      "Weight of edible part (g/1 piece)": "1000",
+      "Inedible part (discarded part)": null,
+      "Weight of inedible part (g/1 piece)": null
+    },
+    "pretreatment_conditions": {
+      "Cooking (processing) method": null,
+      "Other cooking (processing) conditions": null,
+      "Reference for condition setting": null
+    }
+  }
+]
