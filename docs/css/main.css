@@ -22679,30 +22679,4 @@ has-background-danger.is-hoverable:active {
   box-shadow: none;
 }
 
-.button.is-primary {
-  background-color: #2bac73;
-  border-color: #2bac73;
-  color: white;
-  transition: all 0.2s ease;
-}
-
-.button.is-primary:hover {
-  background-color: rgb(14.3333333333%, 57.3333333333%, 38.3333333333%);
-  border-color: rgb(14.3333333333%, 57.3333333333%, 38.3333333333%);
-  color: white;
-}
-
-.button.is-secondary {
-  background-color: #ff914d;
-  border-color: #ff914d;
-  color: white;
-  transition: all 0.2s ease;
-}
-
-.button.is-secondary:hover {
-  background-color: rgb(100%, 44.7940074906%, 10.6666666667%);
-  border-color: rgb(100%, 44.7940074906%, 10.6666666667%);
-  color: white;
-}
-
 /*# sourceMappingURL=main.css.map */

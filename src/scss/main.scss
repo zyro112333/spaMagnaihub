@@ -92,28 +92,3 @@ $secondaryColorDark: color.scale($secondaryColor, $lightness: -15%);
   color: inherit;
   box-shadow: none;
 }
-.button.is-primary {
-  background-color: $primaryColor;
-  border-color: $primaryColor;
-  color: white;
-  transition: all 0.2s ease;
-}
-
-.button.is-primary:hover {
-  background-color: $primaryColorDark;
-  border-color: $primaryColorDark;
-  color: white;
-}
-
-.button.is-secondary {
-  background-color: $secondaryColor;
-  border-color: $secondaryColor;
-  color: white;
-  transition: all 0.2s ease;
-}
-
-.button.is-secondary:hover {
-  background-color: $secondaryColorDark;
-  border-color: $secondaryColorDark;
-  color: white;
-}
