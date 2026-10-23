@@ -1,5 +1,6 @@
 import { translations } from "./translations.js";
 
+<<<<<<< HEAD
 /* Апп эхлэхэд ашиглах үндсэн хэл. 
    localStorage-д хэл хадгалагдаагүй бол энэ хэл ашиглагдана. */
 const DEFAULT_LANGUAGE = "mn";
@@ -10,17 +11,25 @@ const DEFAULT_LANGUAGE = "mn";
    localStorage -> "en"  => "en"
    localStorage хоосон => "mn"
 */
+=======
+const DEFAULT_LANGUAGE = "en";
+
+>>>>>>> f4b67f1603618890a58c8967fbec59195487868b
 export function getCurrentLanguage() {
   return localStorage.getItem("language") || DEFAULT_LANGUAGE;
 }
 
+<<<<<<< HEAD
 /* Хэрэглэгчийн сонгосон хэлийг localStorage-д хадгална.
    Жишээ: setLanguage("en")
 */
+=======
+>>>>>>> f4b67f1603618890a58c8967fbec59195487868b
 export function setLanguage(language) {
   localStorage.setItem("language", language);
 }
 
+<<<<<<< HEAD
 /* translation объект дотроос текст хайж авна.
 
    path:
@@ -39,6 +48,8 @@ export function setLanguage(language) {
    t("abc.xyz")
    => "abc.xyz"
 */
+=======
+>>>>>>> f4b67f1603618890a58c8967fbec59195487868b
 export function t(path) {
   const language = getCurrentLanguage();
   const keys = path.split(".");
@@ -52,6 +63,7 @@ export function t(path) {
   return value ?? path;
 }
 
+<<<<<<< HEAD
 /* Хэлийг MN <-> EN хооронд сольж хадгална.
 
    mn -> en
@@ -61,12 +73,15 @@ export function t(path) {
    "mn" байсан бол "en"
    "en" байсан бол "mn"
 */
+=======
+>>>>>>> f4b67f1603618890a58c8967fbec59195487868b
 export function toggleLanguage() {
   const current = getCurrentLanguage();
   const next = current === "mn" ? "en" : "mn";
   setLanguage(next);
   return next;
 }
+<<<<<<< HEAD
 
 /* { en, mn } бүтэцтэй өгөгдлөөс
    одоогийн хэлний утгыг автоматаар авах helper function.
@@ -152,3 +167,5 @@ export function formatDate(dateString) {
     day: "numeric",
   }).format(date);
 }
+=======
+>>>>>>> f4b67f1603618890a58c8967fbec59195487868b

@@ -14,6 +14,7 @@ export const translations = {
       title: "Тойм",
       welcome: "Тойм хуудсанд тавтай морил.",
     },
+<<<<<<< HEAD
     searchPage: {
       title: "Хүнс хайх",
     },
@@ -87,6 +88,8 @@ export const translations = {
       loadingData: "Өгөгдөл ачаалж байна...",
       failedToLoadNutritionData: "Хүнсний найрлагын өгөгдөл ачаалахад алдаа гарлаа.",
     },
+=======
+>>>>>>> f4b67f1603618890a58c8967fbec59195487868b
   },
   en: {
     nav: {
@@ -103,6 +106,7 @@ export const translations = {
       title: "Overview",
       welcome: "Welcome to the overview page.",
     },
+<<<<<<< HEAD
     searchPage: {
       title: "Food search",
     },
@@ -176,5 +180,7 @@ export const translations = {
       loadingData: "Loading data...",
       failedToLoadNutritionData: "Failed to load nutrition data.",
     },
+=======
+>>>>>>> f4b67f1603618890a58c8967fbec59195487868b
   },
 };
