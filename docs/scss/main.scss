@@ -7,7 +7,6 @@ $primaryColorDark: color.scale($primaryColor, $lightness: -15%);
 $secondaryColor: #ff914d;
 $secondaryColorDark: color.scale($secondaryColor, $lightness: -15%);
 
-<<<<<<< HEAD
 :root {
   --border: #ececf2;
   --sidebar-width: clamp(280px, 22vw, 340px); // Sidebar-ийн өргөн (280px-340px хооронд, дэлгэцийн 22%-ийг эзэлнэ)
@@ -161,90 +160,4 @@ $secondaryColorDark: color.scale($secondaryColor, $lightness: -15%);
   .app-subtitle {
     font-size: 0.95rem;
   }
-=======
-@import "../../node_modules/bulma/bulma";
-
-// override bulma button
-:root {
-  --bulma-primary-h: 151deg;
-  --bulma-primary-s: 65%;
-  --bulma-primary-l: 42%;
-}
-
-.button.is-primary {
-  background-color: $primaryColor;
-  border-color: $primaryColor;
-  color: white;
-  transition: all 0.2s ease;
-}
-
-.button.is-primary:hover {
-  background-color: $primaryColorDark;
-  border-color: $primaryColorDark;
-  color: white;
-}
-
-.button.is-secondary {
-  background-color: $secondaryColor;
-  border-color: $secondaryColor;
-  color: white;
-  transition: all 0.2s ease;
-}
-
-.button.is-secondary:hover {
-  background-color: $secondaryColorDark;
-  border-color: $secondaryColorDark;
-  color: white;
-}
-
-// top navbar
-.navbar-brand a {
-  p {
-    color: $primaryColor;
-    font-size: 1rem;
-  }
-  span {
-    color: $secondaryColor;
-  }
-}
-.navbar-end a {
-  color: $secondaryColor;
-}
-
-.app-sticky {
-  position: sticky;
-  top: 0;
-  z-index: 1000; /* дээр харагдахаар */
-  background-color: #f5f5f5; /* эсвэл өөр өнгө */
-}
-
-.app-shadow {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
-
-.navbar-brand .image img {
-  max-width: 64px;
-  height: auto;
-}
-
-.navbar-item {
-  display: flex;
-  align-items: center;
-  gap: 8px; /* зураг, текстийн хооронд зай */
-}
-
-// Цэсийг баруун тал руу зэрэгцүүлэх. Navbar.js-д .app-top-navbar классыг ашигласан.
-.app-top-navbar-right {
-  flex-grow: 1;
-  justify-content: flex-end;
-}
-
-// лого арын өнгө цагаан тул hover хийх үед ялгарч харагдахгүй болгов.
-.navbar-brand .app-logo:hover,
-.navbar-brand .app-logo:focus,
-.navbar-brand .app-logo:active {
-  background-color: transparent;
-  color: inherit;
-  box-shadow: none;
->>>>>>> f4b67f1603618890a58c8967fbec59195487868b
 }
