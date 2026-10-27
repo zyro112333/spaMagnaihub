@@ -17,11 +17,6 @@ export const translations = {
       title: "Ном",
       view: "Үзэх",
     },
-    books: {
-      title: "Books",
-      view: "View",
-    },
-
     search: {
       title: "Хүнс хайх",
     },
@@ -33,12 +28,12 @@ export const translations = {
 
       amount: "Хэмжээ",
       total: "Нийт",
-      percentRequirement: "Өдөрт авах хэрэгцээний хувь",
+      percentRequirement: "Хоногт авах хэрэгцээний хувь",
 
       selectedAmount:
         "<strong>Сонгосон хэмжээнд үндэслэсэн шим тэжээлийн агууламж (г)</strong><br> Жагсаалтаас хүнсний бүтээгдэхүүн сонгож, хэрэглэх хэмжээг (граммаар) оруулна. Хүснэгт нь сонгосон хэмжээнд үндэслэн илчлэг, үндсэн шимт бодис, амин дэм болон эрдэс бодисын хэмжээг тооцоолон харуулна. Үүнд:<br><br> <strong>Илчлэгийн тооцоо (ккал)</strong><br> <code>Илчлэг = (Уураг × 4) + (Өөх тос × 9) + (Нүүрс ус × 4)</code><br> Илчлэгийг уураг, өөх тос, нүүрс усны стандарт хөрвүүлэх коэффициентоор тооцоолно.",
       dailyRequirement:
-        "<strong>Өдөрт авах хэрэгцээний хэдэн хувь вэ?</strong><br> Хүснэгтийн доод хэсгээс Нас болон Хүйс-ийг сонгосноор илчлэг, үндсэн шимт бодис, амин дэм болон эрдэс бодисын өдөрт авах зөвлөмж хэмжээг тооцоолж, сонгосон хүнс тухайн хэрэгцээний хэдэн хувийг хангаж байгааг харуулна. Энэхүү тооцоолол нь дараах эх сурвалжид үндэслэнэ:<br><br> Эрүүл мэндийн сайдын 2017 оны А/74 дүгээр тушаалын хавсралтад заасан хоногийн хэрэгцээт шимт бодисын зөвлөмж хэмжээг ашигласан.",
+        "<strong>Хоногт авах хэрэгцээний хэдэн хувь вэ?</strong><br> Хүснэгтийн доод хэсгээс Нас болон Хүйс-ийг сонгосноор илчлэг, үндсэн шимт бодис, амин дэм болон эрдэс бодисын хоногт авах зөвлөмж хэмжээг тооцоолж, сонгосон хүнс тухайн хэрэгцээний хэдэн хувийг хангаж байгааг харуулна. Энэхүү тооцоолол нь дараах эх сурвалжид үндэслэнэ:<br><br><a  href='https://legalinfo.mn/mn/detail/12552#:~:text=2017%20%D0%BE%D0%BD%D1%8B%202%20%D0%B4%D1%83%D0%B3%D0%B0%D0%B0%D1%80%20%D1%81%D0%B0%D1%80%D1%8B%D0%BD%2023-%D0%BD%D1%8B%20%D3%A9%D0%B4%D3%A9%D1%80%20%D0%94%D1%83%D0%B3%D0%B0%D0%B0%D1%80,%D0%B1%D0%BE%D0%B4%D0%B8%D1%81%2C%20%D0%B0%D0%BC%D0%B8%D0%BD%D0%B4%D1%8D%D0%BC%2C%2  target='_blank' rel='noopener noreferrer'> Эрүүл мэндийн сайдын 2017 оны А/74 дүгээр </a> тушаалын хавсралтад заасан хоногийн хэрэгцээт шимт бодисын зөвлөмж хэмжээг ашигласан.",
     },
     form: {
       age: "Нас",
@@ -126,6 +121,25 @@ export const translations = {
       province: "аймаг",
       informationWillAppear: "Мэдээлэл энд харагдана.",
     },
+    footer: {
+      teamMembers: "Хамтрагч байгууллагууд",
+      coreMembers: "Төслийн баг",
+
+      projectInvestigators: "Төслийн удирдагч: Б.Энхжаргал, Б.Эркигүл",
+      researchers: "Судлаачид: Б.Буянчимэг, Т.Уламбаяр",
+      others: "Бусад гишүүд: З.Цэрэнханд, Д.Хандсүрэн",
+      softwareDeveloper: "Программ хөгжүүлэгч: Д.Оргил",
+
+      contactInformation: "Холбоо барих",
+      university: "Хөдөө аж ахуйн их сургууль",
+      address: "Зайсан, Хан-Уул дүүрэг, Улаанбаатар 17024, Монгол Улс",
+      phone: "Утас",
+      email: "И-мэйл",
+      afaci: "Азийн хүнс, ХАА-н хамтын ажиллагааны санаачилга",
+      muls: "Хөдөө Аж Ахуйн Их Сургууль",
+      rda: "БНСУ-ын Хөдөөгийн хөгжлийн газар",
+      mfali: "Хүнс, Хөдөө Аж Ахуй, Хөнгөн Үйлдвэрийн Яам",
+    },
   },
   en: {
     nav: {
@@ -140,6 +154,10 @@ export const translations = {
     },
     overview: {
       title: "Food Composition Database Introduction",
+    },
+    books: {
+      title: "Books",
+      view: "View",
     },
     search: {
       title: "Food search",
@@ -245,6 +263,25 @@ export const translations = {
       selected: "Selected",
       province: "province",
       informationWillAppear: "Information will appear here.",
+    },
+    footer: {
+      teamMembers: "Project team members",
+      coreMembers: "Project core members",
+
+      projectInvestigators: "Project investigators: Enkhjargal.B, Erkigul.B",
+      researchers: "Researchers: Buyanchimeg.B, Ulambayar.T",
+      others: "Others: Tserenkhand.Z, Khandsuren.D",
+      softwareDeveloper: "Software developer: Orgil.D",
+
+      contactInformation: "Contact information",
+      university: "Mongolian University of Life Sciences",
+      address: "Zaisan, Khan-Uul district, Ulaanbaatar 17024, Mongolia",
+      phone: "Phone",
+      email: "Email",
+      afaci: "Asian Food and Agriculture Cooperation Initiative",
+      muls: "Mongolian University of Life Sciences",
+      rda: "Rural Development Administration",
+      mfali: "Ministry of Food, Agriculture, and Light Industry",
     },
   },
 };
