@@ -13,8 +13,29 @@ export const translations = {
     overview: {
       title: "Мэдээллийн сангийн танилцуулга",
     },
-    searchPage: {
+    search: {
       title: "Хүнс хайх",
+    },
+    calculation: {
+      title: "Хүнсний тооцоолол",
+
+      macroTitle: "Хүнсээр авах илчлэг ба үндсэн шимт бодис",
+      microTitle: "Хүнсээр авах амин дэм ба эрдэс бодис",
+
+      amount: "Хэмжээ",
+      total: "Нийт",
+      percentRequirement: "Өдөрт авах хэрэгцээний хувь",
+
+      selectedAmount:
+        "<strong>Сонгосон хэмжээнд үндэслэсэн шим тэжээлийн агууламж (г)</strong><br> Жагсаалтаас хүнсний бүтээгдэхүүн сонгож, хэрэглэх хэмжээг (граммаар) оруулна. Хүснэгт нь сонгосон хэмжээнд үндэслэн илчлэг, үндсэн шимт бодис, амин дэм болон эрдэс бодисын хэмжээг тооцоолон харуулна. Үүнд:<br><br> <strong>Илчлэгийн тооцоо (ккал)</strong><br> <code>Илчлэг = (Уураг × 4) + (Өөх тос × 9) + (Нүүрс ус × 4)</code><br> Илчлэгийг уураг, өөх тос, нүүрс усны стандарт хөрвүүлэх коэффициентоор тооцоолно.",
+      dailyRequirement:
+        "<strong>Өдөрт авах хэрэгцээний хэдэн хувь вэ?</strong><br> Хүснэгтийн доод хэсгээс Нас болон Хүйс-ийг сонгосноор илчлэг, үндсэн шимт бодис, амин дэм болон эрдэс бодисын өдөрт авах зөвлөмж хэмжээг тооцоолж, сонгосон хүнс тухайн хэрэгцээний хэдэн хувийг хангаж байгааг харуулна. Энэхүү тооцоолол нь дараах эх сурвалжид үндэслэнэ:<br><br> Эрүүл мэндийн сайдын 2017 оны А/74 дүгээр тушаалын хавсралтад заасан хоногийн хэрэгцээт шимт бодисын зөвлөмж хэмжээг ашигласан.",
+    },
+    form: {
+      age: "Нас",
+      gender: "Хүйс",
+      male: "Эрэгтэй",
+      female: "Эмэгтэй",
     },
     sidebar: {
       searchByFoodName: "Хүнсний нэрээр хайх",
@@ -111,8 +132,29 @@ export const translations = {
     overview: {
       title: "Food Composition Database Introduction",
     },
-    searchPage: {
+    search: {
       title: "Food search",
+    },
+    calculation: {
+      title: "Food calculation",
+
+      macroTitle: "Recommended Daily Energy and Macronutrient Intake from Food",
+      microTitle: "Recommended Daily Vitamin and Mineral Intake from Food",
+
+      amount: "Amount",
+      total: "Total",
+      percentRequirement: "% of requirement",
+
+      selectedAmount:
+        "<strong>Nutrient Intake Based on Selected Amount (g)</strong><br> Select food items from the list and enter the desired amount (in grams). The table will calculate the corresponding energy, macronutrients, and vitamins and minerals based on the selected amount. This includes:<br><br> <strong>Energy Calculation (kcal)</strong><br> <code>Energy = (Protein × 4) + (Fat × 9) + (Carbohydrate × 4)</code><br> Energy is calculated from protein, fat, and carbohydrates using standard conversion factors.",
+      dailyRequirement:
+        "<strong>What Percentage of Daily Requirement?</strong><br> In the table footer, select Age and Gender to calculate the recommended daily intake of energy, macronutrients, and vitamins and minerals. This is based on:<br><br> The recommended daily intake values specified in the Appendix of Order No. A/74 (2017) issued by the Minister of Health.",
+    },
+    form: {
+      age: "Age",
+      gender: "Gender",
+      male: "Male",
+      female: "Female",
     },
     sidebar: {
       searchByFoodName: "Search by food name",
@@ -184,6 +226,7 @@ export const translations = {
       loadingData: "Loading data...",
       failedToLoadNutritionData: "Failed to load nutrition data.",
       noFoodData: "No food data found for this province.",
+      selectedAmount: "Selected amount",
     },
     modal: {
       clear: "Clear",
