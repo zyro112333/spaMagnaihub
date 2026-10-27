@@ -11,11 +11,35 @@ export const translations = {
       brand: "хүнсний найрлагын мэдээллийн сан",
     },
     overview: {
-      title: "Тойм",
-      welcome: "Тойм хуудсанд тавтай морил.",
+      title: "Мэдээллийн сангийн танилцуулга",
     },
-    searchPage: {
+    books: {
+      title: "Ном",
+      view: "Үзэх",
+    },
+    search: {
       title: "Хүнс хайх",
+    },
+    calculation: {
+      title: "Хүнсний тооцоолол",
+
+      macroTitle: "Хүнсээр авах илчлэг ба үндсэн шимт бодис",
+      microTitle: "Хүнсээр авах амин дэм ба эрдэс бодис",
+
+      amount: "Хэмжээ",
+      total: "Нийт",
+      percentRequirement: "Хоногт авах хэрэгцээний хувь",
+
+      selectedAmount:
+        "<strong>Сонгосон хэмжээнд үндэслэсэн шим тэжээлийн агууламж (г)</strong><br> Жагсаалтаас хүнсний бүтээгдэхүүн сонгож, хэрэглэх хэмжээг (граммаар) оруулна. Хүснэгт нь сонгосон хэмжээнд үндэслэн илчлэг, үндсэн шимт бодис, амин дэм болон эрдэс бодисын хэмжээг тооцоолон харуулна. Үүнд:<br><br> <strong>Илчлэгийн тооцоо (ккал)</strong><br> <code>Илчлэг = (Уураг × 4) + (Өөх тос × 9) + (Нүүрс ус × 4)</code><br> Илчлэгийг уураг, өөх тос, нүүрс усны стандарт хөрвүүлэх коэффициентоор тооцоолно.",
+      dailyRequirement:
+        "<strong>Хоногт авах хэрэгцээний хэдэн хувь вэ?</strong><br> Хүснэгтийн доод хэсгээс Нас болон Хүйс-ийг сонгосноор илчлэг, үндсэн шимт бодис, амин дэм болон эрдэс бодисын хоногт авах зөвлөмж хэмжээг тооцоолж, сонгосон хүнс тухайн хэрэгцээний хэдэн хувийг хангаж байгааг харуулна. Энэхүү тооцоолол нь дараах эх сурвалжид үндэслэнэ:<br><br><a  href='https://legalinfo.mn/mn/detail/12552#:~:text=2017%20%D0%BE%D0%BD%D1%8B%202%20%D0%B4%D1%83%D0%B3%D0%B0%D0%B0%D1%80%20%D1%81%D0%B0%D1%80%D1%8B%D0%BD%2023-%D0%BD%D1%8B%20%D3%A9%D0%B4%D3%A9%D1%80%20%D0%94%D1%83%D0%B3%D0%B0%D0%B0%D1%80,%D0%B1%D0%BE%D0%B4%D0%B8%D1%81%2C%20%D0%B0%D0%BC%D0%B8%D0%BD%D0%B4%D1%8D%D0%BC%2C%2  target='_blank' rel='noopener noreferrer'> Эрүүл мэндийн сайдын 2017 оны А/74 дүгээр </a> тушаалын хавсралтад заасан хоногийн хэрэгцээт шимт бодисын зөвлөмж хэмжээг ашигласан.",
+    },
+    form: {
+      age: "Нас",
+      gender: "Хүйс",
+      male: "Эрэгтэй",
+      female: "Эмэгтэй",
     },
     sidebar: {
       searchByFoodName: "Хүнсний нэрээр хайх",
@@ -86,6 +110,35 @@ export const translations = {
       enterFoodName: "Хүнсний нэр оруулна уу",
       loadingData: "Өгөгдөл ачаалж байна...",
       failedToLoadNutritionData: "Хүнсний найрлагын өгөгдөл ачаалахад алдаа гарлаа.",
+      noFoodData: "Энэ аймагт хоолны мэдээлэл олдсонгүй.",
+    },
+    modal: {
+      clear: "Арилгах",
+      selectAll: "Бүгдийг сонгох",
+      search: "Хайх",
+      close: "Хаах",
+      selected: "сонгосон",
+      province: "аймаг",
+      informationWillAppear: "Мэдээлэл энд харагдана.",
+    },
+    footer: {
+      teamMembers: "Хамтрагч байгууллагууд",
+      coreMembers: "Төслийн баг",
+
+      projectInvestigators: "Төслийн удирдагч: Б.Энхжаргал, Б.Эркигүл",
+      researchers: "Судлаачид: Б.Буянчимэг, Т.Уламбаяр",
+      others: "Бусад гишүүд: З.Цэрэнханд, Д.Хандсүрэн",
+      softwareDeveloper: "Программ хөгжүүлэгч: Д.Оргил",
+
+      contactInformation: "Холбоо барих",
+      university: "Хөдөө аж ахуйн их сургууль",
+      address: "Зайсан, Хан-Уул дүүрэг, Улаанбаатар 17024, Монгол Улс",
+      phone: "Утас",
+      email: "И-мэйл",
+      afaci: "Азийн хүнс, ХАА-н хамтын ажиллагааны санаачилга",
+      muls: "Хөдөө Аж Ахуйн Их Сургууль",
+      rda: "БНСУ-ын Хөдөөгийн хөгжлийн газар",
+      mfali: "Хүнс, Хөдөө Аж Ахуй, Хөнгөн Үйлдвэрийн Яам",
     },
   },
   en: {
@@ -100,11 +153,35 @@ export const translations = {
       brand: "Food Composition Database",
     },
     overview: {
-      title: "Overview",
-      welcome: "Welcome to the overview page.",
+      title: "Food Composition Database Introduction",
     },
-    searchPage: {
+    books: {
+      title: "Books",
+      view: "View",
+    },
+    search: {
       title: "Food search",
+    },
+    calculation: {
+      title: "Food calculation",
+
+      macroTitle: "Recommended Daily Energy and Macronutrient Intake from Food",
+      microTitle: "Recommended Daily Vitamin and Mineral Intake from Food",
+
+      amount: "Amount",
+      total: "Total",
+      percentRequirement: "% of requirement",
+
+      selectedAmount:
+        "<strong>Nutrient Intake Based on Selected Amount (g)</strong><br> Select food items from the list and enter the desired amount (in grams). The table will calculate the corresponding energy, macronutrients, and vitamins and minerals based on the selected amount. This includes:<br><br> <strong>Energy Calculation (kcal)</strong><br> <code>Energy = (Protein × 4) + (Fat × 9) + (Carbohydrate × 4)</code><br> Energy is calculated from protein, fat, and carbohydrates using standard conversion factors.",
+      dailyRequirement:
+        "<strong>What Percentage of Daily Requirement?</strong><br> In the table footer, select Age and Gender to calculate the recommended daily intake of energy, macronutrients, and vitamins and minerals. This is based on:<br><br> The recommended daily intake values specified in the Appendix of Order No. A/74 (2017) issued by the Minister of Health.",
+    },
+    form: {
+      age: "Age",
+      gender: "Gender",
+      male: "Male",
+      female: "Female",
     },
     sidebar: {
       searchByFoodName: "Search by food name",
@@ -175,6 +252,36 @@ export const translations = {
       enterFoodName: "Please enter a food name.",
       loadingData: "Loading data...",
       failedToLoadNutritionData: "Failed to load nutrition data.",
+      noFoodData: "No food data found for this province.",
+      selectedAmount: "Selected amount",
+    },
+    modal: {
+      clear: "Clear",
+      selectAll: "Select All",
+      search: "Search",
+      close: "Close",
+      selected: "Selected",
+      province: "province",
+      informationWillAppear: "Information will appear here.",
+    },
+    footer: {
+      teamMembers: "Project team members",
+      coreMembers: "Project core members",
+
+      projectInvestigators: "Project investigators: Enkhjargal.B, Erkigul.B",
+      researchers: "Researchers: Buyanchimeg.B, Ulambayar.T",
+      others: "Others: Tserenkhand.Z, Khandsuren.D",
+      softwareDeveloper: "Software developer: Orgil.D",
+
+      contactInformation: "Contact information",
+      university: "Mongolian University of Life Sciences",
+      address: "Zaisan, Khan-Uul district, Ulaanbaatar 17024, Mongolia",
+      phone: "Phone",
+      email: "Email",
+      afaci: "Asian Food and Agriculture Cooperation Initiative",
+      muls: "Mongolian University of Life Sciences",
+      rda: "Rural Development Administration",
+      mfali: "Ministry of Food, Agriculture, and Light Industry",
     },
   },
 };
