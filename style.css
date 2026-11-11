@@ -1,0 +1,31 @@
+:root{--g:#2f5d3a;--g2:#e8f0e4;--b:#8a5a2b;--bg:#f7f4ec;--t:#222}
+*{box-sizing:border-box}
+body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--t);line-height:1.55}
+header{background:var(--g);display:flex;justify-content:space-between;align-items:center;padding:14px 28px;flex-wrap:wrap;gap:8px}
+header a{color:#fff;text-decoration:none;margin-left:18px}
+header a.logo{font-size:1.3rem;font-weight:700;margin:0}
+header a.active{border-bottom:2px solid #f4c869}
+main{max-width:1000px;margin:24px auto;padding:0 16px;min-height:70vh}
+footer{text-align:center;padding:16px;font-size:.85rem;color:#666}
+.hero{background:linear-gradient(120deg,var(--g),#527d4f);color:#fff;border-radius:14px;padding:40px 30px}
+.hero h1{margin:0 0 8px;font-size:2rem}
+.stats{display:flex;gap:14px;margin-top:20px;flex-wrap:wrap}
+.stat{background:#fff;border-radius:10px;padding:14px 22px;box-shadow:0 1px 4px #0002;text-align:center}
+.stat b{display:block;font-size:1.8rem;color:var(--g)}
+.bar{display:flex;gap:10px;margin:18px 0;flex-wrap:wrap}
+input,select,button{padding:9px 12px;font-size:1rem;border:1px solid #bbb;border-radius:8px}
+button{background:var(--g);color:#fff;border:0;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+.card{background:#fff;border-radius:12px;padding:16px;box-shadow:0 1px 4px #0002;text-decoration:none;color:inherit;display:block}
+.card:hover{transform:translateY(-3px);box-shadow:0 4px 10px #0003}
+.emoji{font-size:2.6rem;background:var(--g2);border-radius:50%;width:70px;height:70px;display:flex;align-items:center;justify-content:center;margin-bottom:8px}
+.latin{font-style:italic;color:#666;font-size:.9rem}
+.badge{display:inline-block;padding:2px 10px;border-radius:12px;font-size:.8rem;color:#fff}
+.E{background:#2e7d32}.C{background:#ef8f00}.P{background:#c62828}
+.detail{background:#fff;border-radius:12px;padding:24px;box-shadow:0 1px 4px #0002}
+.detail table{border-collapse:collapse;width:100%;margin:12px 0}
+.detail td{border-bottom:1px solid #eee;padding:8px}.detail td:first-child{font-weight:600;width:35%}
+.tool{background:#fff;border-radius:12px;padding:18px;margin-bottom:18px;box-shadow:0 1px 4px #0002}
+.res{margin-top:10px;padding:10px 14px;border-radius:8px;background:var(--g2)}
+.res.warn{background:#fff3cd;color:#7a5200}
+.res small{display:block;color:#555;margin-top:4px;font-family:Consolas,monospace}

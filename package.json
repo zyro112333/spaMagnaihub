@@ -1,0 +1,14 @@
+{
+  "name": "mongol-mushroom-spa",
+  "version": "1.0.0",
+  "description": "Mongolian wild mushrooms - Single Page Application (Bulma, Sass, Vanilla JS)",
+  "scripts": {
+    "sass": "sass --quiet --watch src/scss/main.scss src/css/main.css",
+    "build": "sass --quiet src/scss/main.scss src/css/main.css"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^7.3.1",
+    "bulma": "^1.0.4",
+    "sass": "^1.108.1"
+  }
+}
